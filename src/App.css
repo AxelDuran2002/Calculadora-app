@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+body {
+    background-color: #090c31;
+    margin-top: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator {
+    background-color: #15173c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap: .5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+    background-color: #15173c;
+    color: white;
+    border: 0;
+    flex: 1;
+    margin: 0 2px;
+    padding: 1.5rem .5rem;
+    font-size: 25px;
+    border-radius: .5rem;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+    background-color: #090c31;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.operador {
+    background-color: orange;
+}
+
+.operador:hover {
+    background-color: #f0ae5d;
+}
+
+.igual {
+    background-color: #e6394a;
+}
+
+.igual:hover {
+    background-color: #e65766;
+}
+
+.screen {
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    background-color: #090c31;
+    border-radius: .5rem;
+    font-family: monospace;
+    font-weight: 600;
 }
